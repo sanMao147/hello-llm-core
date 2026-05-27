@@ -1,18 +1,33 @@
 {
   "name": "hello-llm-core",
   "version": "1.0.0",
-  "description": "Hello Agents LLM 客户端 - TypeScript 实现",
+  "description": "Hello Agents LLM 客户端 - React 实现（学习项目）",
   "type": "module",
   "scripts": {
-    "start": "npx tsx src/main.ts",
-    "dev": "npx tsx --watch src/main.ts"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "openai": "^4.73.0"
+    "openai": "^4.73.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "remark-gfm": "^4.0.0",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "lucide-react": "^0.400.0"
   },
   "devDependencies": {
-    "tsx": "^4.19.0",
-    "typescript": "^5.7.2"
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.0"
   }
 }
